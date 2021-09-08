@@ -25,7 +25,11 @@ describe 'get_count' do
     expect(get_count("aeiou")).to eq(5)
   end
 
-  it 'when no vowels it returns 0' do
+  it 'when no vowels, it returns 0' do
     expect(get_count("")).to eq(0)
+  end
+
+  it 'when all consonants, it returns 0' do
+    expect(get_count("qwrtykpl")).to eq(0)
   end
 end
