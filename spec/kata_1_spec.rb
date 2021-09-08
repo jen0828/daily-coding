@@ -12,4 +12,8 @@ describe 'get_count' do
   it 'can count 1 vowel "a"' do
     expect(get_count("a")).to eq(1)
   end
+
+  it 'can count 2 vowel "aa"' do
+    expect(get_count("aa")).to eq(2)
+  end
 end

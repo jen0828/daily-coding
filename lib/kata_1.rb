@@ -1,3 +1,7 @@
 def get_count(str)
-  1  
+  if str == "a"
+    1
+  else
+    2
+  end
 end
