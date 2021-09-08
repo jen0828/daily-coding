@@ -13,15 +13,15 @@ describe 'get_count' do
     expect(get_count("a")).to eq(1)
   end
 
-  it 'can count 2 vowel "aa"' do
+  it 'can count 2 vowels "aa"' do
     expect(get_count("aa")).to eq(2)
   end
 
-  it 'can count vowel "ae"' do
+  it 'can count 2 vowels "ae"' do
     expect(get_count("ae")).to eq(2)
   end
 
-  it 'can count vowel "aeiou"' do
+  it 'can count 5 vowels "aeiou"' do
     expect(get_count("aeiou")).to eq(5)
   end
 
