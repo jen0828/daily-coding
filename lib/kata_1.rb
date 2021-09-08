@@ -1,3 +1,3 @@
 def get_count(str)
-  str.scan(/a/).count
+  str.scan(/[a,e]/).count 
 end
