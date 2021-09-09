@@ -26,4 +26,8 @@ describe "#switcheroo" do
   it "can switch letters of a and b" do
     expect(switcheroo("baab")).to eq("abba")
   end
+  
+  it "should leave letter c unchanged" do
+    expect(switcheroo("cc")).to eq("cc")
+  end
 end
