@@ -1,3 +1,3 @@
 def switcheroo(str)
-  "bb"
+  str.gsub("a","b")
 end

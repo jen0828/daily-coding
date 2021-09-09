@@ -14,4 +14,8 @@ describe "#switcheroo" do
   it "can change letter a to letter b" do
     expect(switcheroo("aa")).to eq("bb")
   end
+
+  it "can change letter a to letter b" do
+    expect(switcheroo("aaa")).to eq("bbb")
+  end
 end
