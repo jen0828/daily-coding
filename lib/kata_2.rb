@@ -1,3 +1,3 @@
 def switcheroo(str)
-  str.gsub("a","b")
+  str.gsub!(/[ab]/,"a" => "b", "b" => "a")
 end

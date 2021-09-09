@@ -18,4 +18,12 @@ describe "#switcheroo" do
   it "can change letter a to letter b" do
     expect(switcheroo("aaa")).to eq("bbb")
   end
+
+  it "can change letter b to letter a" do
+    expect(switcheroo("bb")).to eq("aa")
+  end
+
+  it "can switch letters of a and b" do
+    expect(switcheroo("baab")).to eq("abba")
+  end
 end
