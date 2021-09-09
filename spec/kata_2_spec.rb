@@ -30,4 +30,9 @@ describe "#switcheroo" do
   it "should leave letter c unchanged" do
     expect(switcheroo("cc")).to eq("cc")
   end
+
+  it "should leave letter c unchanged" do
+    expect(switcheroo("bccbcaababccabcca")).to eq("accacbbabaccbaccb")
+  end
+
 end
