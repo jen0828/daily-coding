@@ -12,4 +12,9 @@ describe '#to_number_array' do
   it 'should return array converted to numbers'do
   expect(to_number_array(["1"])).to eq([1])
   end
+
+  it 'should return array converted to numbers'do
+  expect(to_number_array(["1", "2", "3"])).to eq([1, 2, 3])
+  end
+
 end
