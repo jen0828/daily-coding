@@ -25,4 +25,8 @@ describe '#to_number_array' do
   expect(to_number_array(["1.1", "2.2", "3.3"])).to eq([1.1, 2.2, 3.3])
   end
 
+  it 'should return array converted to numbers'do
+  expect(to_number_array(["1", "2.2", "3"])).to eq([1, 2.2, 3])
+  end
+
 end
