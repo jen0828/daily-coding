@@ -10,10 +10,18 @@
 #   "Implement me!"
 # end
 
-require "kata_4"
+require 'kata_4'
 
-describe "#longest_repetition" do
+describe '#longest_repetition' do
   it "should return an array when input empty string" do
-  expect(longest_repetition("")).to eq(["", 0])
+    expect(longest_repetition('')).to eq(['', 0])
+  end
+
+  it "should return an array when input charcaters" do
+    expect(longest_repetition('aaab')).to eq(['a', 3])
+  end
+
+  it "should return an array when input characters" do
+    expect(longest_repetition('aaabbbbbcc')).to eq(['b', 5])
   end
 end
