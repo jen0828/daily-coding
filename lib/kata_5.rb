@@ -1,3 +1,7 @@
 def solution(str, ending)
-  return true if str.include?(ending)
+  if str[-1] == ending[-1]
+    true
+  else
+    false
+  end
 end

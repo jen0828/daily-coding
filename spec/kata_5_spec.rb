@@ -11,5 +11,13 @@ require 'kata_5'
 describe '#solution' do
   it 'returns true when condition meets ' do
     expect(solution('ab', 'b')).to be_truthy 
+  end 
+
+  it 'returns true when condition meets ' do
+    expect(solution('abc', 'bc')).to be_truthy 
   end
+
+  it 'returns false when condition meets ' do
+    expect(solution('ab', 'a')).to be_falsey 
+  end 
 end
