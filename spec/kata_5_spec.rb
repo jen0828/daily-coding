@@ -20,4 +20,12 @@ describe '#solution' do
   it 'returns false when condition meets ' do
     expect(solution('ab', 'a')).to be_falsey 
   end 
+
+  it 'returns false when condition meets ' do
+    expect(solution('abc', 'd')).to be_falsey 
+  end 
+
+  it 'returns false when condition meets ' do
+    expect(solution('abcdefg', 'efg')).to be_truthy 
+  end 
 end
