@@ -28,4 +28,8 @@ describe '#solution' do
   it 'returns true when condition meets ' do
     expect(solution('abcdefg', 'efg')).to be_truthy 
   end 
+
+  it 'returns false when condition meets ' do
+    expect(solution('abcdefg', '')).to be_falsey 
+  end 
 end
