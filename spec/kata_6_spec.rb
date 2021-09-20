@@ -30,6 +30,10 @@ describe '#solve' do
 
   it 'return one integer that is either only negative or only positive' do
     expect(solve([-110,110,-38,-38,-62,62,-38,-38,-38])).to eq(-38)
+  end 
+
+  it 'return one integer that is either only negative or only positive' do
+    expect(solve([])).to eq(0)
   end
 end
 
