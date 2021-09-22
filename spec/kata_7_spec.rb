@@ -36,7 +36,7 @@ describe 'ten_min_walk?' do
     expect(ten_min_walk?(['w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w'])).to be false
   end
 
-  it 'should return false if numbers of letters are less than 10' do
+  it 'should return false if 10 letters are all same letter' do
     expect(ten_min_walk?(['w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w'])).to be false
   end
 end
