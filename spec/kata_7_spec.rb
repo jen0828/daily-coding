@@ -29,6 +29,10 @@ require 'kata_7'
 
 describe 'ten_min_walk?' do
   it 'should return false if numbers of letters are less than 10' do
-  expect(ten_min_walk?(['w'])).to be false
+    expect(ten_min_walk?(['w'])).to be false
+  end
+
+  it 'should return false if numbers of letters are less than 10' do
+    expect(ten_min_walk?(['w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w'])).to be false
   end
 end
