@@ -39,4 +39,8 @@ describe 'ten_min_walk?' do
   it 'should return false if 10 letters are all same letter' do
     expect(ten_min_walk?(['w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w', 'w'])).to be false
   end
+
+  it 'should return true if the walk take ten minutes exactly' do
+    expect(ten_min_walk?(['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w'])).to be true
+  end
 end
