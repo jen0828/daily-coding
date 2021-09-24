@@ -8,12 +8,12 @@ class Scrabble
                      'J' => 8, 'X' => 8,
                      'Q' => 10, 'Z' => 10 }
 
-    if letters.nil?
+    if letters.nil? 
       0
-    elsif letter_value[letters.upcase].nil?
-      0
+    elsif letters.match? /\A[a-zA-Z]+\z/
+      letters.upcase.chars.map {|x| letter_value[x]}.reduce(:+)
     else
-      letter_value[letters.upcase]
+      0  
     end
   end
 end
