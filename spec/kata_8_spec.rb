@@ -19,5 +19,9 @@ describe Scrabble do
     it 'should return 0 when input is not alphabet letter ' do
       expect(subject.score('\t\n')).to eq(0)
     end
+
+    it 'should return 0 when input is nil ' do
+      expect(subject.score(nil)).to eq(0)
+    end
   end
 end
