@@ -28,8 +28,8 @@ describe Scrabble do
       expect(subject.score('street')).to eq(6)
     end 
 
-    # it 'should return 22 when input letters are street ' do
-    #   expect(subject.score('quirky')).to eq(22)
-    # end
+    it 'should return 22 when input letters are quirky ' do
+      expect(subject.score('quirky')).to eq(22)
+    end
   end
 end
