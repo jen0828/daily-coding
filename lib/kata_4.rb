@@ -1,11 +1,12 @@
-def longest_repetition (chars)
+def longest_repetition(chars)
   return ['', 0] if chars == ''
+
   ans = []
   string = ''
   target = ''
-  chars.each_char.with_index do |c, index|
+  chars.each_char.with_index do |c, _index|
     if c == target
-      string = string + target
+      string += target
     else
       target = c
       string = target
@@ -13,5 +14,5 @@ def longest_repetition (chars)
     ans.push string
   end
   ans = ans.max_by { |s| s.length }
-  [ans[0], ans.length ]
+  [ans[0], ans.length]
 end

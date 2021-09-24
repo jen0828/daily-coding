@@ -2,34 +2,33 @@
 # Example:
 # 'acb' --> 'bca'
 # 'aabacbaa' --> 'bbabcabb
-# def switcheroo(x)  
+# def switcheroo(x)
 # end
 
-require "kata_2"
+require 'kata_2'
 
-describe "#switcheroo" do
-  it "can change letter a to letter b" do
-    expect(switcheroo("aa")).to eq("bb")
+describe '#switcheroo' do
+  it 'can change letter a to letter b' do
+    expect(switcheroo('aa')).to eq('bb')
   end
 
-  it "can change letters aaa to letter bbb" do
-    expect(switcheroo("aaa")).to eq("bbb")
+  it 'can change letters aaa to letter bbb' do
+    expect(switcheroo('aaa')).to eq('bbb')
   end
 
-  it "can change letters bb to letters aa" do
-    expect(switcheroo("bb")).to eq("aa")
+  it 'can change letters bb to letters aa' do
+    expect(switcheroo('bb')).to eq('aa')
   end
 
-  it "can switch letters of a and b" do
-    expect(switcheroo("baab")).to eq("abba")
-  end
-  
-  it "should leave letter c unchanged" do
-    expect(switcheroo("cc")).to eq("cc")
+  it 'can switch letters of a and b' do
+    expect(switcheroo('baab')).to eq('abba')
   end
 
-  it "should pass a random test" do
-    expect(switcheroo("bccbcaababccabcca")).to eq("accacbbabaccbaccb")
+  it 'should leave letter c unchanged' do
+    expect(switcheroo('cc')).to eq('cc')
   end
 
+  it 'should pass a random test' do
+    expect(switcheroo('bccbcaababccabcca')).to eq('accacbbabaccbaccb')
+  end
 end

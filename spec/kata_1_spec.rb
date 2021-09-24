@@ -10,26 +10,26 @@ require 'kata_1'
 
 describe 'get_count' do
   it 'can count 1 vowel "a"' do
-    expect(get_count("a")).to eq(1)
+    expect(get_count('a')).to eq(1)
   end
 
   it 'can count 2 vowels "aa"' do
-    expect(get_count("aa")).to eq(2)
+    expect(get_count('aa')).to eq(2)
   end
 
   it 'can count 2 vowels "ae"' do
-    expect(get_count("ae")).to eq(2)
+    expect(get_count('ae')).to eq(2)
   end
 
   it 'can count 5 vowels "aeiou"' do
-    expect(get_count("aeiou")).to eq(5)
+    expect(get_count('aeiou')).to eq(5)
   end
 
   it 'when no vowels, it returns 0' do
-    expect(get_count("")).to eq(0)
+    expect(get_count('')).to eq(0)
   end
 
   it 'when all consonants, it returns 0' do
-    expect(get_count("qwrtykpl")).to eq(0)
+    expect(get_count('qwrtykpl')).to eq(0)
   end
 end

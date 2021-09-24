@@ -9,24 +9,23 @@
 require 'kata_3'
 
 describe '#to_number_array' do
-  it 'should return array converted to numbers'do
-  expect(to_number_array(["1"])).to eq([1])
+  it 'should return array converted to numbers' do
+    expect(to_number_array(['1'])).to eq([1])
   end
 
-  it 'should return array converted to numbers'do
-  expect(to_number_array(["1", "2", "3"])).to eq([1, 2, 3])
+  it 'should return array converted to numbers' do
+    expect(to_number_array(%w[1 2 3])).to eq([1, 2, 3])
   end
 
-  it 'should return array converted to numbers'do
-  expect(to_number_array(["1.1"])).to eq([1.1])
+  it 'should return array converted to numbers' do
+    expect(to_number_array(['1.1'])).to eq([1.1])
   end
 
-  it 'should return array converted to numbers'do
-  expect(to_number_array(["1.1", "2.2", "3.3"])).to eq([1.1, 2.2, 3.3])
+  it 'should return array converted to numbers' do
+    expect(to_number_array(['1.1', '2.2', '3.3'])).to eq([1.1, 2.2, 3.3])
   end
 
-  it 'should return array converted to numbers'do
-  expect(to_number_array(["1", "2.2", "3"])).to eq([1, 2.2, 3])
+  it 'should return array converted to numbers' do
+    expect(to_number_array(['1', '2.2', '3'])).to eq([1, 2.2, 3])
   end
-
 end
