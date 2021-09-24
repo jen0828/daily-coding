@@ -31,5 +31,9 @@ describe Scrabble do
     it 'should return 22 when input letters are quirky ' do
       expect(subject.score('quirky')).to eq(22)
     end
+
+    it 'should return 41 when input letters are OXYPHENBUTAZONE ' do
+      expect(subject.score('OXYPHENBUTAZONE')).to eq(41)
+    end
   end
 end
