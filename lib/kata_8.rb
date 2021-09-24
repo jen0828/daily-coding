@@ -8,6 +8,10 @@ class Scrabble
                      'J' => 8, 'X' => 8,
                      'Q' => 10, 'Z' => 10 }
 
-    letter_value[letters.upcase]
+    if letter_value[letters.upcase].nil?
+      0
+    else
+      letter_value[letters.upcase]
+    end
   end
 end
