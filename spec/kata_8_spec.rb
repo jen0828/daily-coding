@@ -26,7 +26,7 @@ describe Scrabble do
 
     it 'should return 6 when input letters are street ' do
       expect(subject.score('street')).to eq(6)
-    end 
+    end
 
     it 'should return 22 when input letters are quirky ' do
       expect(subject.score('quirky')).to eq(22)
