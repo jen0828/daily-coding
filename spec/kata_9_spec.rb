@@ -5,18 +5,18 @@ describe Shop do
 
   describe '#checkout' do
     it 'should return -1 when argument is not a capital letter' do
-    expect(subject.checkout('a')).to eq(-1)
+      expect(subject.checkout('a')).to eq(-1)
     end
 
     it 'should return -1 when argument is not in all capital letters' do
-    expect(subject.checkout('aBc')).to eq(-1)
+      expect(subject.checkout('aBc')).to eq(-1)
     end
 
     it "should return -1 when argument is '-B8x' " do
       expect(subject.checkout('-B8x')).to eq(-1)
     end
 
-    it "should return -1 when argument is an integer " do
+    it 'should return -1 when argument is an integer ' do
       expect(subject.checkout(18)).to eq(-1)
     end
   end
