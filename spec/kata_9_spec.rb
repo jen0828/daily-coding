@@ -14,6 +14,10 @@ describe Shop do
 
     it "should return -1 when argument is '-B8x' " do
       expect(subject.checkout('-B8x')).to eq(-1)
-      end
+    end
+
+    it "should return -1 when argument is an integer " do
+      expect(subject.checkout(18)).to eq(-1)
+    end
   end
 end
