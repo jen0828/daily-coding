@@ -14,6 +14,7 @@ checkout(String) -> Integer
 
 Input | Output
 ```
+shop.checkout('a') # => -1
 shop.checkout('aBc') # => -1
 shop.checkout('-B8x') # => -1
 shop.checkout(18) # => -1
