@@ -8,8 +8,15 @@ describe Shop do
     expect(subject.checkout('a')).to eq(-1)
     end
 
-    it 'should return -1 when arguments are not in all capital letters' do
+    it 'should return -1 when argument is not in all capital letters' do
     expect(subject.checkout('aBc')).to eq(-1)
     end
+
+    # # shop.checkout('-B8x') # => -1
+
+    # it "should return -1 when argument is '-B8x' " do
+    #   expect(subject.checkout('aBc')).to eq(-1)
+    #   end
+  
   end
 end
