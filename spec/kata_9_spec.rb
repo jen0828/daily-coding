@@ -12,11 +12,8 @@ describe Shop do
     expect(subject.checkout('aBc')).to eq(-1)
     end
 
-    # # shop.checkout('-B8x') # => -1
-
-    # it "should return -1 when argument is '-B8x' " do
-    #   expect(subject.checkout('aBc')).to eq(-1)
-    #   end
-  
+    it "should return -1 when argument is '-B8x' " do
+      expect(subject.checkout('-B8x')).to eq(-1)
+      end
   end
 end
