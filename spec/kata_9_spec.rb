@@ -1,6 +1,8 @@
 require 'kata_9'
 
 describe Shop do
+  subject { Shop.new }
+
   it { is_expected.to respond_to(:checkout).with(1).arguments }
 
   describe '#checkout' do
