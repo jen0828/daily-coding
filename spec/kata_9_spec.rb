@@ -19,5 +19,9 @@ describe Shop do
     it 'should return -1 when argument is an integer ' do
       expect(subject.checkout(18)).to eq(-1)
     end
+
+    it "should return 100 when argument is 'AA' " do
+      expect(subject.checkout('AA')).to eq(100)
+    end
   end
 end

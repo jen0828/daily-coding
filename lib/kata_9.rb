@@ -1,9 +1,15 @@
 class Shop
   def checkout(str_capital)
-    new_str = str_capital.to_s
+    price = { 'A' => 50, 'B' => 30, 'C' => 20, 'D' => 15 }
 
-    if new_str != new_str.upcase
-      -1
+    if str_capital.is_a? String
+
+      if str_capital != str_capital.upcase
+        -1
+      elsif str_capital == str_capital.upcase
+        str_capital.chars.map { |letter| price[letter] }.reduce(:+)
+      end
+
     else
       -1
     end
