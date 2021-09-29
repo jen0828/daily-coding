@@ -27,5 +27,9 @@ describe Shop do
     it "should return 115 when argument is 'ABCD' " do
       expect(subject.checkout('ABCD')).to eq(115)
     end
+
+    it 'should return an error when argument is empty ' do
+      expect { subject.checkout('') }.to raise_error 'your basket is empty!'
+    end
   end
 end
