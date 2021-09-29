@@ -8,7 +8,7 @@ class Shop
 
       if str_capital != str_capital.upcase
         -1
-      elsif str_capital == str_capital.upcase
+      else 
         str_capital.chars.map { |letter| price[letter] }.reduce(:+)
       end
 
