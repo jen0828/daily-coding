@@ -30,6 +30,10 @@ describe Shop do
       expect(subject.checkout('ABCD')).to eq(115)
     end
 
+    it "should return 300 when argument is 'AAAAAA' " do
+      expect(subject.checkout('AAAAAA')).to eq(300)
+    end
+
     it 'should return an error when argument is empty ' do
       expect { subject.checkout('') }.to raise_error 'your basket is empty!'
     end
