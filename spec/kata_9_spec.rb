@@ -23,5 +23,9 @@ describe Shop do
     it "should return 100 when argument is 'AA' " do
       expect(subject.checkout('AA')).to eq(100)
     end
+
+    it "should return 115 when argument is 'ABCD' " do
+      expect(subject.checkout('ABCD')).to eq(115)
+    end
   end
 end
