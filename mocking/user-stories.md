@@ -4,7 +4,7 @@
 I would like to be able to see my balance
 
 2. As a user 
-I would like to be able to deposite money into my bank account
+I would like to be able to deposit money into my bank account
 
 3. As a user 
 I would like to be able to withdraw money from my bank account
