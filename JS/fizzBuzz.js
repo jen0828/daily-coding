@@ -5,14 +5,14 @@ class FizzBuzz {
   }
 
   say(number) {
-    if (this.isDivisibleBy(3, number)) {
-      return 'Fizz';
+    if (this.isDivisibleBy(15, number)) {
+      return 'FizzBuzz';
     } else if (this.isDivisibleBy(5, number)) {
       return 'Buzz';
+    } else if (this.isDivisibleBy(3, number)) {
+      return 'Fizz';
     }
   }
-
-
 }
 
 module.exports = FizzBuzz;

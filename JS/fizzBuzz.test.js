@@ -31,6 +31,17 @@ describe('FizzBuzz', () => {
       })
     })
 
+    describe('multiplies of 15', () => {
+
+      it('should return "FizzBuzz', () => {
+        expect(fizzBuzz.say(15)).toMatch('FizzBuzz');
+      })
+
+      it('should return "FizzBuzz', () => {
+        expect(fizzBuzz.say(30)).toMatch('FizzBuzz');
+      })
+    })
+
   })
 
 })
