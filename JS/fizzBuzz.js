@@ -1,8 +1,13 @@
 class FizzBuzz {
- 
 
-  say(number){
-    return "Fizz"
+  isDivisibleBy(divisor, number) {
+    return number % divisor === 0;
+  }
+
+  say(number) {
+    if (this.isDivisibleBy(3, number)) {
+      return "Fizz";
+    };
   }
 
 

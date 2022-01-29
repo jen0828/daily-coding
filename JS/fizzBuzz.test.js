@@ -16,6 +16,10 @@ describe('FizzBuzz', () => {
       expect(fizzBuzz.say(3)).toMatch('Fizz');
     })
 
+    it('should return "Fizz', () => {
+      expect(fizzBuzz.say(6)).toMatch('Fizz');
+    })
+
 
   })
 
