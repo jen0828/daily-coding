@@ -6,8 +6,10 @@ class FizzBuzz {
 
   say(number) {
     if (this.isDivisibleBy(3, number)) {
-      return "Fizz";
-    };
+      return 'Fizz';
+    } else if (this.isDivisibleBy(5, number)) {
+      return 'Buzz';
+    }
   }
 
 
