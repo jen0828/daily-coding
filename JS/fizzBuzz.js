@@ -11,6 +11,8 @@ class FizzBuzz {
       return 'Buzz';
     } else if (this.isDivisibleBy(3, number)) {
       return 'Fizz';
+    } else {
+      return number;
     }
   }
 }
